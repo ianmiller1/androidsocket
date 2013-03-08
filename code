@@ -1,0 +1,19 @@
+public class ClientThread implements Runnable {
+	 
+    public void run() {
+            
+    		try{
+    			
+    			
+    			InetAddress server = InetAddress.getByName(host);
+    			
+    		Socket s = new Socket(server, port);
+    			
+    			Log.d("ClientActivity", "C: Connecting...");}
+            catch (UnknownHostException e) {
+            	System.err.println(e);
+            	}
+            	catch (IOException e) {
+            	System.err.println(e);
+            	}
+    		}
